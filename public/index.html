@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="/css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fighters App</title>
+  </head>
+  <body>
+    <h1>FIGHTERS APP</h1>
+
+    <form id="create-fighter-form" action="">
+      <h2 class="form-header">Create a newfighter</h2>
+
+      <div class="fighter-form-div">
+        <label for="name-input">Name</label>
+        <input id="name-input" type="text" required />
+      </div>
+
+      <div class="fighter-form-div">
+        <label for="power-input">Power</label>
+        <input id="power-input" type="number" required />
+      </div>
+
+      <div class="fighter-form-div">
+        <label for="health-input">Health</label>
+        <input id="health-input" type="number" required />
+      </div>
+
+      <div class="fighter-form-div">
+        <!-- <button>Create</button> -->
+        <input type="submit" value="Create Fighter!" />
+      </div>
+    </form>
+
+    <div id="fighters-list">
+      <div>
+        <h3>Jake</h3>
+        <p>power: 4</p>
+        <p>health: 4</p>
+      </div>
+    </div>
+
+    <form action="/delete-fighter" method="DELETE" id="delete-fighter-form">
+      <label for="delete-input">Name</label>
+      <input id="delete-input" type="text" required />
+      <input type="submit" value="Delete Fighter!" />
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="/js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
